@@ -11,9 +11,9 @@ export default function(){
             </div>
 
             <div className="flex gap-5 items-center justify-center m-8">
-                <FaLinkedin size={35}/>
-                <FaGithub size={35}/>
-                <FaInstagram size={35}/>
+                <a href="https://www.linkedin.com/in/renan-santos-js" target="_blank"><FaLinkedin size={35}/></a>
+                <a href="https://github.com/renansilvaz" target="_blank"><FaGithub size={35}/></a>
+                <a href="https://www.instagram.com/renan_silvaz" target="_blank"><FaInstagram size={35}/></a>
             </div>
         </nav>
     )
