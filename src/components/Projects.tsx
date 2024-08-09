@@ -1,6 +1,8 @@
 import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 export default function Projects(){
     return(
@@ -19,12 +21,12 @@ export default function Projects(){
                             <img 
                                 src={project.image} 
                                 alt={project.title} 
-                                width={250} height={250} 
-                                className="mb-6 rounded" />
+                                width={300} height={300} 
+                                className="mb-4 rounded" />
                         </div>
                         <div className="w-full max-w-xl lg:w-3/4">
                             <h6 className="mb-2 font-semibold text-2xl md:text-3xl">{project.title}</h6>
-                            <p className="mb-4 text-neutral-400">{project.description}</p>
+                            <p className="mb-3 text-neutral-400">{project.description}</p>
                             {project.technologies.map((tech, index) => (
                                 <span
                                     className="mr-2 rounded bg-neutral-900 
@@ -34,9 +36,13 @@ export default function Projects(){
                                 </span>
                             ))}
                             <a 
+                                className="flex flex-row mt-1 gap-2
+                                     bg-neutral-800 py-1 rounded-md 
+                                     w-40 justify-center
+                                     text-sm"
                                 target="_blank"
                                 href={project.link}>
-                                    Link do projeto
+                                    Link do projeto <FaExternalLinkAlt className="mt-1" size={13} />
                             </a>
                         </div>
                     </motion.div>

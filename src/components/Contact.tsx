@@ -10,21 +10,21 @@ export default function Contact(){
                     <label className="mb-1">Nome</label>
                     <input
                         required
-                        className="rounded p-1 text-neutral-800 outline-none w-96 focus:bg-slate-300" 
+                        className="rounded-lg py-1 px-2 text-neutral-800 outline-none w-96 focus:bg-slate-300" 
                         type="text"
                         placeholder="Informe seu nome..." />
 
                     <label className="mt-4 mb-1">E-mail</label>
                     <input
                         required
-                        className="rounded p-1 text-neutral-800 outline-none focus:bg-slate-300" 
+                        className="rounded-lg py-1 px-2 text-neutral-800 outline-none focus:bg-slate-300" 
                         type="email"
                         placeholder="Informe seu e-mail..." />
 
                     <label className="mt-4 mb-1">Mensagem</label>
                     <textarea required placeholder="Sua mensagem..." 
                               name="" id="" 
-                              className="p-1 text-neutral-800 outline-none h-32 rounded-sm focus:bg-slate-300"></textarea>
+                              className="py-1 px-2 text-neutral-800 outline-none h-32 rounded-lg focus:bg-slate-300"></textarea>
 
                     <button type="submit" className="mt-2 rounded py-1 bg-purple-900">
                         Enviar

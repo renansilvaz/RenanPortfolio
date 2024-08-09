@@ -5,6 +5,7 @@ import { SOBRE_MIM2 } from "../constants";
 import { SOBRE_MIM3 } from "../constants";
 import { SOBRE_MIM4 } from "../constants";
 import { motion } from "framer-motion";
+import { IoMdDownload } from "react-icons/io";
 
 export default function About(){
     return(
@@ -39,7 +40,16 @@ export default function About(){
                             <p className="my-2 max-w-xl">{SOBRE_MIM3}</p>
                             <p className="my-2 max-w-xl pb-6">{SOBRE_MIM4}</p>
                             </div>
+
                         </div> 
+                             <a 
+                                className="flex flex-row gap-2 w-48 justify-center bg-neutral-800 py-2 rounded-md"                           
+                                href="https://drive.google.com/file/d/1kapB75LoQ8cK0au2wedoXYerHO7FKO25/view?usp=sharing"
+                                download
+                                target="_blank">
+                                Download C.V 
+                                <IoMdDownload className="mt-1" />
+                            </a>
                 </motion.div>
             </div>
         </div>
